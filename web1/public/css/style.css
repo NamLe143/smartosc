@@ -1,0 +1,52 @@
+* { margin: 0; padding: 0; }
+
+@font-face {
+	font-family: din-regular;
+	src: url(../font/DIN-Regular.ttf);
+}
+@font-face {
+	font-family: din-bold;
+	src: url(../font/DIN-Bold.ttf);
+}
+@font-face {
+	font-family: shopping-cart;
+	src: url(../font/icomoon.ttf);
+}
+
+.text-light { color: #ffffff; }
+.text-red { color: #af1d30; }
+.text-grey { color: #848484; }
+.text-brown { color: #7e1a31; }
+
+.font-weight-bold{
+	font-family: din-bold;
+}
+
+.container { max-width: 1130px; }
+.nav-link{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#brisbane-header .menu-top{
+	background: #af1d30;
+}
+#brisbane-header .menu-top .account .login:after{
+	content: '/';
+	font-family: din-bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#brisbane-header .menu-top .shopping-cart .amount:before{
+	content: '(';
+}
+#brisbane-header .menu-top .shopping-cart .amount:after{
+	content: ')';
+}
+#brisbane-header .menu-top .shopping-cart .icon-cart:before {
+  content: "\e900";
+  font-family: shopping-cart;
+  padding-left: 15px;
+  padding-right: 10px;
+  color: #fff;
+}

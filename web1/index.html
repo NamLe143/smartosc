@@ -3,9 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Brisbane</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/css/brisbane-icon.css">
 	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="public/css/responsive.css">
 	
 	<script src="public/js/jquery.js"></script>
 	<script src="public/js/bootstrap.min.js"></script>
@@ -13,34 +16,44 @@
 </head>
 <body>
 	<header id="brisbane-header">
-		<div class="row mx-0 menu-top container-fluid">
-			<div class="container d-flex justify-content-between">
-				<div class="title d-flex align-items-center">
-					<span class="text-light">Pick up at  <span class="text-light font-weight-bold">Brisbane International Airport</span></span>
-				</div>
-				<div class="account-shopping">
-					<ul class="nav">
-						<li class="account d-flex">
-							<a href="#" class="login text-uppercase text-light font-weight-bold nav-link">Login</a>
-							<a href="#" class="register text-uppercase text-light font-weight-bold nav-link">Register</a>
-						</li>
-						<li class="shopping-cart nav-item">
-							<a href="#" class="nav-link">
-								<span class="icon-cart"></span>
-								<span class="price text-light">
-									AU$ 713.99
-									<span class="amount text-light font-weight-bold">3</span>
-								</span>		
-							</a>
-						</li>
-					</ul>
+		<div class="menu-top container-fluid px-0 px-sm-0 px-md-auto">
+			<div class="container">
+				<div class="row  flex-column-reverse flex-sm-column-reverse flex-md-row">
+					<div class="col-12 col-sm-12 col-md-6 title d-flex align-items-center justify-content-center justify-content-sm-cenrer justify-content-md-start">
+						<span>Pick up at  <span class="text-light font-weight-bold">Brisbane International Airport</span></span>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 account-shopping">
+						<ul class="nav d-flex justify-content-between justify-content-sm-between justify-content-md-end">
+							<li class="account d-flex">
+								<a href="#" class="login text-uppercase text-light font-weight-bold nav-link">Login</a>
+								<a href="#" class="register text-uppercase text-light font-weight-bold nav-link">Register</a>
+							</li>
+							<li class="shopping-cart nav-item">
+								<a href="#" class="nav-link">
+									<span class="brisbane-icon icon-cart"></span>
+									<span class="price text-light font-weight-bold d-none d-sm-none d-md-inline-block">
+										AU$ 713.99
+									</span>	
+									<span class="amount d-inline-block d-sm-inline-block d-md-inline-block text-light font-weight-bold">3</span>	
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row mx-0 menu-bottom container">
-			<div class=""></div>
+		<div class="menu-bottom container">
+			<div class="row">
+				<span class="col-4 col-sm-4 col-md-6 d-inline-block d-sm-inline-block d-md-none brisbane-icon icon-bar"></span>
+				<div class=" col-4 col-sm-4 col-md-6 logo">
+					<img src="public/images/logo.png" alt="Brisbane" class="w-100">
+				</div>
+				<div class="col-4 col-sm-4 col-md-6 d-flex justify-content-end position-relative search">
+					<input type="text" class="form-control form-control-sm" placeholder="search">
+					<span id="icon-search" class="brisbane-icon icon-search font-weight-bold"></span>
+				</div>
+			</div>
 		</div>
-		
 	</header>
 </body>
 </html>

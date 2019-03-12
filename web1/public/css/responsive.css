@@ -1,0 +1,54 @@
+
+@media (max-width: 575.98px) { 
+	
+}
+
+@media (max-width: 767.98px) { 
+	::-webkit-input-placeholder { color: transparent !important}
+	::-moz-placeholder { color: transparent !important } /* firefox 19+ */
+	:-ms-input-placeholder { color: transparent !important } /* ie */
+	input:-moz-placeholder { color: transparent !important }
+
+	#brisbane-header .menu-top .title{
+		background: #f5f5f5;
+		height: 70px;
+	}
+	#brisbane-header .menu-top .title span{
+		color: #848484;
+	}
+	#brisbane-header .menu-top .title .text-light{
+		color: #af1d30 !important;
+	}
+	#brisbane-header .menu-top .account{
+		font-size: 21px;
+	}
+	#brisbane-header .menu-top .shopping-cart .icon-cart{
+		font-size: 20px;
+		padding-right: 0px;
+	}
+	#brisbane-header .menu-top .shopping-cart .amount{
+		font-size: 21px;
+	}
+	#brisbane-header .menu-top .shopping-cart .amount:before{
+		content: '';
+	}
+	#brisbane-header .menu-top .shopping-cart .amount:after{
+		content: '';
+	}
+	.icon-bar { position: relative; }
+	.icon-bar:before{
+		position: absolute;
+		bottom: 0;
+	}
+	#brisbane-header .menu-bottom .search .icon-search { top: unset; bottom: 0; }
+	#brisbane-header .menu-bottom .search .form-control { width: unset; }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

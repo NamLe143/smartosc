@@ -2,15 +2,11 @@
 
 @font-face {
 	font-family: din-regular;
-	src: url(../font/DIN-Regular.ttf);
+	src: url(../fonts/DIN-Regular.ttf);
 }
 @font-face {
 	font-family: din-bold;
-	src: url(../font/DIN-Bold.ttf);
-}
-@font-face {
-	font-family: shopping-cart;
-	src: url(../font/icomoon.ttf);
+	src: url(../fonts/DIN-Bold.ttf)
 }
 
 .text-light { color: #ffffff; }
@@ -27,9 +23,22 @@
 	padding-left: 0px;
 	padding-right: 0px;
 }
+.form-control:focus{
+	color: #848484;
+	box-shadow: none;
+	border-color: #848484;
+}
+::-webkit-input-placeholder { color:#848484 !important; font-family: din-bold; font-size: 14px; text-transform: uppercase; text-transform: uppercase; }
+::-moz-placeholder { color:#848484 !important; font-family: din-bold; font-size: 14px; text-transform: uppercase; } /* firefox 19+ */
+:-ms-input-placeholder { color:#848484 !important; font-family: din-bold; font-size: 14px; text-transform: uppercase; } /* ie */
+input:-moz-placeholder { color:#848484 !important; font-family: din-bold; font-size: 14px; text-transform: uppercase; }
+
 
 #brisbane-header .menu-top{
 	background: #af1d30;
+}
+#brisbane-header .menu-top .title span{
+	color: #eebec7;
 }
 #brisbane-header .menu-top .account .login:after{
 	content: '/';
@@ -43,10 +52,39 @@
 #brisbane-header .menu-top .shopping-cart .amount:after{
 	content: ')';
 }
-#brisbane-header .menu-top .shopping-cart .icon-cart:before {
-  content: "\e900";
-  font-family: shopping-cart;
-  padding-left: 15px;
-  padding-right: 10px;
-  color: #fff;
+#brisbane-header .menu-top .shopping-cart .icon-cart{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#brisbane-header .menu-bottom{
+	padding-top: 65px;
+	padding-bottom: 75px;
+}
+#brisbane-header .menu-bottom .logo img.w-100{
+	max-width: 325px;
+}
+#brisbane-header .menu-bottom .search{
+	position: relative;
+
+}
+#brisbane-header .menu-bottom .search input{
+	border-style: none;
+	border-bottom-style: inset;
+}
+#brisbane-header .menu-bottom .search .form-control{
+	border-radius: 0;
+	max-width: 305px;
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+	padding-bottom: 18px;
+	padding-left: 15px;
+}
+#brisbane-header .menu-bottom .search .icon-search{
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
 }

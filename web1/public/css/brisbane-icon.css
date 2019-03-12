@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'brisbane-icon';
+  src:  url('../fonts/brisbane-icon.eot?o1s0rl');
+  src:  url('../fonts/brisbane-icon.eot?o1s0rl#iefix') format('embedded-opentype'),
+    url('../fonts/brisbane-icon.ttf?o1s0rl') format('truetype'),
+    url('../fonts/brisbane-icon.woff?o1s0rl') format('woff'),
+    url('../fonts/brisbane-icon.svg?o1s0rl#brisbane-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'brisbane-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bar:before {
+  content: "\e900";
+  color: #af1d30;
+}
+.icon-cart:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-chevron-down:before {
+  content: "\e902";
+}
+.icon-chevron-up:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e904";
+  color: #af1d30;
+}
